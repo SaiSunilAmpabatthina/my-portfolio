@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins' , 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background: #081b29;
+    color:#ededed;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav img{
+    min-width: 150px;
+}
+
+.navbar  {
+    flex: 1;
+    text-align: right;
+
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    cursor: pointer;
+
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orangered;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbar a{
+    text-decoration: none;
+    color:#00abf0;
+}
+.navbar a:hover,
+.navbar a.active {
+    color:#00abf0;
+}
+.PROFILE {
+    height:100vh;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    padding:0 10%;
+      
+}
+.PROFILE-CONTENT {
+    max-width: 600px;
+}
+.PROFILE-CONTENT h1 {
+    font-size: 60px;
+    font-weight: 700;
+
+}
+.PROFILE-CONTENT h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color:orangered;
+
+}
+.PROFILE-CONTENT P {
+    font-size: 17px;
+    font-style:italic;
+
+}
+#img{
+    position: relative;
+    left:300px;
+    height: 500px;
+    border-radius:12%;
+    /*border: dashed rgb(109, 104, 32);*/
+    border: 0.5rem outset rgb(252, 252, 251);
+
+}
+/* EDUCATIONAL QUALIFICATIONS*/
+
+
+#img1{
+    height: 300px;
+
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+     
+}
+.btn{
+    width: 130px; 
+    height: 50px; 
+    background:pink; 
+    border:0px;
+    border-radius: 10px;
+    position: relative;
+    top:250px;
+    right:850px;
+}
+/*.EDUCATION-content h1{
+
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+
+
+}*/
+.centered {
+    position: absolute;
+    font-size:60px ;
+    font-weight: 700;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.studies{
+    width:75%;
+    margin:auto;
+    color:darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.studies1{
+    border:solid 0px;
+    height:100px;
+    width:250px;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 20px;
+    /* border-radius: 50%; */
+    background-color:rgb(220, 20, 150);
+    position: relative;
+    top: -300px;
+    left: 120px;
+}
+.studies2{
+    border:solid 0px;
+    margin-top:50px;
+    color:bisque;
+    height:200px;
+    width:55%;
+    font-size: 25px;
+    text-align: center;
+    font-style: inherit;
+    position: relative;
+    top: -300px;
+    left: 70px;
+} 
+.studies1{
+    border: solid 0px;
+    /* height:150px;
+    width:150px; */
+    background: pink;
+    animation-name: style;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes style {
+    0%{
+        border-radius: 50%;
+    }
+    50%{
+        width:150px;
+        border-radius: 50%;
+        transform:scale(1.0) rotate(360deg);
+
+    }
+   75%{
+        border-radius: 50%;
+        background-color:bisque;
+        transform:scale(1.0) rotate(360deg);
+    }
+    100%{
+        border-radius: 50%;
+        transform:scale(1.0) rotate(360deg);
+    }
+}
